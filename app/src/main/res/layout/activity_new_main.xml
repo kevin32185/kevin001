@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="請輸入你的個人資訊"
+            android:text="你好，歡迎來到神奇寶貝的世界 你的第一個夥伴是小火龍"
             android:id="@+id/infoText"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
@@ -36,7 +36,7 @@
             android:layout_below="@+id/infoText"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:hint="請輸入你的名字" />
+            android:hint="KT" />
 
         <RadioGroup
             android:layout_width="wrap_content"
@@ -46,25 +46,6 @@
             android:layout_marginTop="20dp"
             android:id="@+id/optionsGroup">
 
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/radioButton"
-                android:checked="true"
-                android:drawableRight="@drawable/charmander_thumbnail" />
-
-            <RadioButton
-                android:layout_width="100dp"
-                android:layout_height="70dp"
-                android:id="@+id/radioButton2"
-                android:drawableRight="@drawable/squirtle_thumbnail"
-                android:drawablePadding="-20dp" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="妙蛙種子"
-                android:id="@+id/radioButton3" />
         </RadioGroup>
 
         <Button
@@ -72,9 +53,8 @@
             android:layout_height="wrap_content"
             android:text="確認"
             android:id="@+id/confirmButton"
-            android:layout_below="@+id/optionsGroup"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="20dp" />
+            android:layout_below="@+id/radioButton"
+            android:layout_centerHorizontal="true" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -82,10 +62,40 @@
             android:text="Hide"
             android:id="@+id/hide"
             android:layout_gravity="center_horizontal"
-            android:checked="false"
+            android:checked="true"
             android:layout_alignTop="@+id/nameEditText"
             android:layout_toRightOf="@+id/nameEditText"
             android:layout_toEndOf="@+id/nameEditText" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton3"
+            android:drawableBottom="@drawable/bulbasaur_thumbnail"
+            android:layout_alignTop="@+id/radioButton2"
+            android:layout_toRightOf="@+id/confirmButton"
+            android:layout_toEndOf="@+id/confirmButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton"
+            android:checked="true"
+            android:drawableRight="@drawable/charmander_thumbnail"
+            android:layout_alignTop="@+id/radioButton2"
+            android:layout_toLeftOf="@+id/confirmButton"
+            android:layout_toStartOf="@+id/confirmButton" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton2"
+            android:drawableRight="@drawable/squirtle_thumbnail"
+            android:drawablePadding="-20dp"
+            android:checked="false"
+            android:layout_below="@+id/optionsGroup"
+            android:layout_toRightOf="@+id/radioButton"
+            android:layout_toEndOf="@+id/radioButton" />
 
     </RelativeLayout>
 </LinearLayout>
