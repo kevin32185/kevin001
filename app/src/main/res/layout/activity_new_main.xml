@@ -46,6 +46,17 @@
             android:layout_marginTop="20dp"
             android:id="@+id/optionsGroup">
 
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton2"
+                android:drawableRight="@drawable/squirtle_thumbnail"
+                android:drawablePadding="-20dp"
+                android:checked="false"
+                android:layout_below="@+id/optionsGroup"
+                android:layout_toRightOf="@+id/radioButton"
+                android:layout_toEndOf="@+id/radioButton" />
+
         </RadioGroup>
 
         <Button
@@ -70,32 +81,23 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton3"
-            android:drawableBottom="@drawable/bulbasaur_thumbnail"
-            android:layout_alignTop="@+id/radioButton2"
-            android:layout_toRightOf="@+id/confirmButton"
-            android:layout_toEndOf="@+id/confirmButton" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/radioButton"
             android:checked="true"
             android:drawableRight="@drawable/charmander_thumbnail"
-            android:layout_alignTop="@+id/radioButton2"
+            android:layout_alignTop="@+id/optionsGroup"
             android:layout_toLeftOf="@+id/confirmButton"
             android:layout_toStartOf="@+id/confirmButton" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton2"
-            android:drawableRight="@drawable/squirtle_thumbnail"
-            android:drawablePadding="-20dp"
+            android:id="@+id/radioButton3"
+            android:drawableBottom="@drawable/bulbasaur_thumbnail"
+            android:longClickable="false"
             android:checked="false"
-            android:layout_below="@+id/optionsGroup"
-            android:layout_toRightOf="@+id/radioButton"
-            android:layout_toEndOf="@+id/radioButton" />
+            android:layout_above="@+id/confirmButton"
+            android:layout_alignRight="@+id/hide"
+            android:layout_alignEnd="@+id/hide" />
 
     </RelativeLayout>
 </LinearLayout>
