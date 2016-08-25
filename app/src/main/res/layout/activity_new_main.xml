@@ -10,6 +10,21 @@
         android:src="@drawable/pokemon"
         android:layout_weight="1" />
 
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New RadioButton"
+        android:id="@+id/radioButton4"
+        android:layout_gravity="center_horizontal" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:checked="true"
+        android:text="Hide"
+        android:layout_gravity="right" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -81,6 +96,19 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
+=======
+            android:id="@+id/radioButton3"
+            android:drawableBottom="@drawable/bulbasaur_thumbnail"
+            android:layout_alignTop="@+id/radioButton2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:longClickable="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+>>>>>>> origin/master
             android:id="@+id/radioButton"
             android:checked="true"
             android:drawableRight="@drawable/charmander_thumbnail"
